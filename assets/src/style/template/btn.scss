@@ -1,0 +1,26 @@
+.btn-general {
+    background: #26943e;
+    border-radius: 5px;
+    font-family: Bai Jamjuree;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    padding: 15px 0;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.03);
+        background: #1c5f2a;
+        transition: 0.3s;
+    }
+}
+
+@media (max-width: 767px) {
+    .btn-general {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
