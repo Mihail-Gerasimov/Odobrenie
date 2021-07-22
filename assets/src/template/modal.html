@@ -1,21 +1,37 @@
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+<!-- data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop" -->
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+      <div class="modal-header border-0">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <div class="modal-body position-relative d-flex flex-column align-items-center">
+        <h4 class="title-modal mb-2">Оформите заявку</h4>
+        <p class="text-modal mb-3">Для сотрудничества с нами <br>
+          оставьте свои данные.</p>
+        <form class="d-flex flex-column align-items-center" action="">
+          <input class="obj-width input-modal mb-2" type="text" placeholder="Ваше имя">
+          <input class="obj-width input-modal mb-2" type="tel" placeholder="Телефон">
+          <button class="obj-width btn-general mb-2" type="submit">Подать заявку</button>
+          <p class="modal-bot">Нажимая кнопку “Заполнить заявку” вы соглашаетесь
+            с Политикой конфеденциальности нашей компании</p>
+        </form>
+        <img class="m-money position-absolute" src="img/1-modal/m-money.png" alt="">
+        <div class="line-green position-absolute"></div>
       </div>
     </div>
   </div>
-</div> -->
+</div>
+
+<div class="modal-thanks position-fixed d-flex flex-column align-items-center" style="display: none !important;">
+  <div class="line-green-thank position-absolute"></div>
+  <img class="mb-4" src="img/1-modal/m-ok.png" alt="">
+  <h3 class="title-thank mb-1">заявка отправлена!</h3>
+  <p class="text-modal mb-2">Наш менеджер свяжется <br>
+    с вами в ближайшее время</p>
+  <img src="img/1-modal/m-money-thanks.png" alt="">
+</div>

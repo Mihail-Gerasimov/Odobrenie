@@ -637,15 +637,60 @@
     // faster
 
     // questions
+    .questions-telephone {
+        margin-right: 20px;
+        width: 350px;
+    }
+    .questions__question-title {
+        padding: 20px;
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .questions__question-content--active {
+        padding-bottom: 20px;
+    }
+    .questions__question-content {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 18px;
+    }
+    .questions__question:nth-child(4) .questions__question-title {
+        padding: 8px 0 7px 20px;
+    }
+    .questions__question:nth-child(5) .questions__question-title {
+        padding: 8px 0 7px 20px;
+    }
+    .ques-abs {
+        top: 25px;
+        left: 66px;
+    }
     // questions
 
     // reviews
+    .reviews-abs {
+        left: inherit;
+        bottom: inherit;
+        right: 0;
+        top: 0;
+    }
     // reviews
 
     // conditions
     // conditions
 
     // footer
+    .f-logo {
+        width: 200px;
+    }
+    .f-list {
+        margin-bottom: 25px;
+    }
+    .footer-two {
+        padding-top: 10px;
+    }
+    .footer-three {
+        padding-top: 13px;
+    }
     // footer
 
     // modal
@@ -979,15 +1024,32 @@
     // faster
 
     // questions
+    .questions-telephone {
+        width: 310px;
+    }
+    .questions__question-title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .questions__question-content {
+        font-size: 16px;
+    }
     // questions
 
     // reviews
+    .reviews-content-item {
+        width: 300px;
+    }
     // reviews
 
     // conditions
     // conditions
 
     // footer
+    .f-list__element::before {
+        width: 100%;
+        top: 35px;
+    }
     // footer
 
     // modal
@@ -1417,9 +1479,37 @@
     // faster
 
     // questions
+    .questions-telephone {
+        display: none;
+    }
+    .questions__question-content {
+        max-width: inherit;
+    }
+    .questions {
+        padding: 35px 0 40px;
+    }
+    .big-pack {
+        display: none;
+    }
+    .title-questions {
+        margin-bottom: 30px;
+    }
+    .ques-abs {
+        top: inherit;
+        width: 55px;
+        left: 13px;
+        bottom: -15px;
+    }
     // questions
 
     // reviews
+    .reviews-content-item {
+        width: 255px;
+    }
+    .reviews-abs {
+        width: 70px;
+        top: -36px;
+    }
     // reviews
 
     // conditions
@@ -1813,15 +1903,85 @@
     // faster
 
     // questions
+    .questions__question-title {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 16px;
+    }
+    .questions__question-content {
+        font-size: 14px;
+    }
+    .questions__question:nth-child(5) .questions__question-title {
+        padding: 8px 7px 7px 20px;
+    }
+    .questions__question:nth-child(5) .questions__question-title br {
+        display: none;
+    }
+    .questions__question:nth-child(4) .questions__question-title br {
+        display: none;
+    }
+    .questions__question:nth-child(4) .questions__question-title {
+        padding: 8px 7px 7px 20px;
+    }
     // questions
 
     // reviews
+    .title-reviews {
+        margin-bottom: 35px;
+    }
+    .reviews {
+        padding: 35px 0 35px;
+    }
     // reviews
 
     // conditions
     // conditions
 
     // footer
+    .f-logo {
+        width: 155px;
+    }
+    .f-list-item {
+        font-size: 14px;
+    }
+    .footer-three::before {
+        display: table;
+        content: "";
+        height: 1px;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        width: 100%;
+        background-color: #828282;
+    }
+    .footer-mob-text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 140%;
+        color: #2f2f2f;
+    }
+    .footer-mob-text:nth-child(2)::before {
+        width: 100%;
+        height: 1px;
+        display: table;
+        content: "";
+        position: absolute;
+        background-color: #828282;
+        bottom: -11px;
+        left: 0;
+    }
+    .footer-mob-text:first-child {
+        margin-bottom: 14px;
+    }
+    .footer-mob-text:nth-child(2) {
+        margin-bottom: 21px;
+    }
+    .footer-list-mobile {
+        margin-bottom: 60px;
+    }
+
     // footer
 
     // modal

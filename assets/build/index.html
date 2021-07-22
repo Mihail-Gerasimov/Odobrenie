@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/main.min.css">
-
     <!-- foonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,49 +13,69 @@
         rel="stylesheet">
     <!-- foonts -->
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" href="css/main.min.css">
+
     <title>Одобрение</title>
 </head>
 
 <body>
 
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Launch demo modal
-    </button>
+    <!-- data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop" -->
     
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <div class="modal-header border-0">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="modal-body position-relative d-flex flex-column align-items-center">
+            <h4 class="title-modal mb-2">Оформите заявку</h4>
+            <p class="text-modal mb-3">Для сотрудничества с нами <br>
+              оставьте свои данные.</p>
+            <form class="d-flex flex-column align-items-center" action="">
+              <input class="obj-width input-modal mb-2" type="text" placeholder="Ваше имя">
+              <input class="obj-width input-modal mb-2" type="tel" placeholder="Телефон">
+              <button class="obj-width btn-general mb-2" type="submit">Подать заявку</button>
+              <p class="modal-bot">Нажимая кнопку “Заполнить заявку” вы соглашаетесь
+                с Политикой конфеденциальности нашей компании</p>
+            </form>
+            <img class="m-money position-absolute" src="img/1-modal/m-money.png" alt="">
+            <div class="line-green position-absolute"></div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+    
+    <div class="modal-thanks position-fixed d-flex flex-column align-items-center" style="display: none !important;">
+      <div class="line-green-thank position-absolute"></div>
+      <img class="mb-4" src="img/1-modal/m-ok.png" alt="">
+      <h3 class="title-thank mb-1">заявка отправлена!</h3>
+      <p class="text-modal mb-2">Наш менеджер свяжется <br>
+        с вами в ближайшее время</p>
+      <img src="img/1-modal/m-money-thanks.png" alt="">
+    </div>
 
     <nav class="nav position-relative">
     
         <div class="container">
             <div class="nav-top d-flex justify-content-between align-items-center py-2">
                 <a class="d-md-none d-block" href="tel:8 800 800 80 80">
-                    <img class="nav-mob" src="../img/2-nav/nav-mob.png" alt="">
+                    <img class="nav-mob" src="img/2-nav/nav-mob.png" alt="">
                 </a>
-                <a href="../index.html">
-                    <img class="logo" src="../img/2-nav/logo.png" alt="logo">
+                <a href="index.html">
+                    <img class="logo" src="img/2-nav/logo.png" alt="logo">
                 </a>
                 <p class="nav-text d-md-inline d-none">Помощь в получении кредита в Москве</p>
                 <div class="number-block d-md-flex d-none align-items-center">
-                    <img class="nav-mob me-2" src="../img/2-nav/nav-mob.png" alt="">
+                    <img class="nav-mob me-2" src="img/2-nav/nav-mob.png" alt="">
                     <a class="nav-tel" href="tel:8 800 800 80 80">8 800 800 80 80 <span>Заказать звонок</span></a>
                 </div>
-                <img class="burger d-md-none d-block" src="../img/2-nav/burder.png" alt="">
+                <img class="burger d-md-none d-block" src="img/2-nav/burder.png" alt="">
             </div>
         </div>
     
@@ -65,12 +83,16 @@
             <div class="container">
                 <div class="nav-bot-block d-flex justify-content-center align-items-center">
                     <ul class="nav-list d-md-flex d-none">
-                        <li class="nav-list__item"><a href="#" class="nav-list__item--link text-white">преимущества</a></li>
-                        <li class="nav-list__item"><a href="#" class="nav-list__item--link text-white">условия</a></li>
-                        <li class="nav-list__item"><a href="#" class="nav-list__item--link text-white">о компании</a></li>
-                        <li class="nav-list__item"><a href="#" class="nav-list__item--link text-white">как получить</a></li>
-                        <li class="nav-list__item"><a href="#" class="nav-list__item--link text-white">faq</a></li>
-                        <li class="nav-list__item me-0"><a href="#" class="nav-list__item--link text-white">отзывы</a></li>
+                        <li class="nav-list__item"><a href="#reg" class="nav-list__item--link text-white">преимущества</a>
+                        </li>
+                        <li class="nav-list__item"><a href="#endo" class="nav-list__item--link text-white">условия</a></li>
+                        <li class="nav-list__item"><a href="#about-us" class="nav-list__item--link text-white">о
+                                компании</a></li>
+                        <li class="nav-list__item"><a href="#what" class="nav-list__item--link text-white">как получить</a>
+                        </li>
+                        <li class="nav-list__item"><a href="#questions" class="nav-list__item--link text-white">faq</a></li>
+                        <li class="nav-list__item me-0"><a href="#reviews"
+                                class="nav-list__item--link text-white">отзывы</a></li>
                     </ul>
                     <p class="nav-bot__text d-md-none d-inline">
                         Помощь в получении кредита в Москве
@@ -80,15 +102,19 @@
         </div>
         <div class="mobile-menu position-absolute">
             <ul class="nav-list d-flex flex-column position-relative">
-                <li class="nav-list__item me-0 mb-3"><a href="#" class="nav-list__item--link text-white">преимущества</a>
+                <li class="nav-list__item me-0 mb-3"><a href="#reg" class="nav-list__item--link text-white">преимущества</a>
                 </li>
-                <li class="nav-list__item me-0 mb-3"><a href="#" class="nav-list__item--link text-white">условия</a></li>
-                <li class="nav-list__item me-0 mb-3"><a href="#" class="nav-list__item--link text-white">о компании</a></li>
-                <li class="nav-list__item me-0 mb-3"><a href="#" class="nav-list__item--link text-white">как получить</a>
+                <li class="nav-list__item me-0 mb-3"><a href="#endo" class="nav-list__item--link text-white">условия</a>
                 </li>
-                <li class="nav-list__item me-0 mb-3"><a href="#" class="nav-list__item--link text-white">faq</a></li>
-                <li class="nav-list__item me-0"><a href="#" class="nav-list__item--link text-white">отзывы</a></li>
-                <img class="closed position-absolute" src="../img/2-nav/closed.png" alt="">
+                <li class="nav-list__item me-0 mb-3"><a href="#about-us" class="nav-list__item--link text-white">о
+                        компании</a></li>
+                <li class="nav-list__item me-0 mb-3"><a href="#what" class="nav-list__item--link text-white">как
+                        получить</a>
+                </li>
+                <li class="nav-list__item me-0 mb-3"><a href="#questions" class="nav-list__item--link text-white">faq</a>
+                </li>
+                <li class="nav-list__item me-0"><a href="#reviews" class="nav-list__item--link text-white">отзывы</a></li>
+                <img class="closed position-absolute" src="img/2-nav/closed.png" alt="">
             </ul>
         </div>
     </nav>
@@ -100,13 +126,14 @@
             </h2>
             <p class="header-six mb-2 position-relative">по ставке <span>от 6%</span></p>
             <p class="header-text mb-3">Даже с испорченной кредитной историей!</p>
-            <button class="btn-general btn-header d-sm-block d-none">Подать заявку</button>
+            <button class="btn-general btn-header d-sm-block d-none" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">Подать заявку</button>
     
             <div class="header-card d-sm-flex d-none flex-wrap flex-sm-row flex-column">
     
                 <div class="header-card__element position-relative me-4 mb-md-0 mb-3">
                     <div class="header-card__top d-flex align-items-end mb-2">
-                        <img class="header-card__img me-1" src="../img/3-header/h-calendar.png" alt="">
+                        <img class="header-card__img me-1" src="img/3-header/h-calendar.png" alt="">
                         <p class="header-card__text mt-1">Без проверки <br> кредитной истории</p>
                     </div>
                     <p class="header-card__info">Нам не важно на сколько <br>
@@ -115,7 +142,7 @@
     
                 <div class="header-card__element position-relative me-4 mb-md-0 mb-3">
                     <div class="header-card__top d-flex align-items-end mb-2">
-                        <img class="header-card__img me-1" src="../img/3-header/h-bag.png" alt="">
+                        <img class="header-card__img me-1" src="img/3-header/h-bag.png" alt="">
                         <p class="header-card__text mt-1">Без официального <br> трудоустройства</p>
                     </div>
                     <p class="header-card__info">У нас вы можете оформить <br>
@@ -124,7 +151,7 @@
     
                 <div class="header-card__element position-relative mb-md-0 mb-3">
                     <div class="header-card__top d-flex align-items-end mb-2">
-                        <img class="header-card__img me-1" src="../img/3-header/h-money.png" alt="">
+                        <img class="header-card__img me-1" src="img/3-header/h-money.png" alt="">
                         <p class="header-card__text mt-1">Кредит <br>
                             на любые цели</p>
                     </div>
@@ -139,7 +166,7 @@
     
                 <div class="header-card__element position-relative me-4 mb-md-0 mb-4">
                     <div class="header-card__top d-flex align-items-sm-end align-items-center mb-2">
-                        <img class="header-card__img me-1" src="../img/3-header/h-calendar.png" alt="">
+                        <img class="header-card__img me-1" src="img/3-header/h-calendar.png" alt="">
                         <p class="header-card__text mt-1">Без проверки <br> кредитной истории</p>
                     </div>
                     <p class="header-card__info">Нам не важно на сколько <br>
@@ -148,7 +175,7 @@
     
                 <div class="header-card__element position-relative me-4 mb-md-0 mb-4">
                     <div class="header-card__top d-flex align-items-sm-end align-items-center mb-2">
-                        <img class="header-card__img me-1" src="../img/3-header/h-bag.png" alt="">
+                        <img class="header-card__img me-1" src="img/3-header/h-bag.png" alt="">
                         <p class="header-card__text mt-1">Без официального <br> трудоустройства</p>
                     </div>
                     <p class="header-card__info">У нас вы можете оформить <br>
@@ -157,7 +184,7 @@
     
                 <div class="header-card__element header-card__element--before position-relative mb-md-0 mb-4">
                     <div class="header-card__top d-flex align-items-sm-end align-items-center mb-2">
-                        <img class="header-card__img me-1" src="../img/3-header/h-money.png" alt="">
+                        <img class="header-card__img me-1" src="img/3-header/h-money.png" alt="">
                         <p class="header-card__text mt-1">Кредит <br>
                             на любые цели</p>
                     </div>
@@ -169,9 +196,9 @@
     
             </div>
         </div>
-        <img class="h-one-element position-absolute" src="../img/3-header/h-one-element.png" alt="">
-        <img class="h-two-element position-absolute" src="../img/3-header/h-two-element.png" alt="">
-        <img class="h-three-element position-absolute" src="../img/3-header/h-three-element.png" alt="">
+        <img class="h-one-element position-absolute" src="img/3-header/h-one-element.png" alt="">
+        <img class="h-two-element position-absolute" src="img/3-header/h-two-element.png" alt="">
+        <img class="h-three-element position-absolute" src="img/3-header/h-three-element.png" alt="">
     </section>
 
     <section class="calc">
@@ -181,7 +208,7 @@
                 <div class="top-plus__card me-sm-3 me-0 mb-3">
                     <div class="substrate-calc"></div>
                     <div class="top-plus__content d-flex flex-sm-column align-items-sm-start flex-row align-items-center">
-                        <img class="top-plus__img mb-sm-3 mb-0 me-sm-0 me-3" src="../img/4-calc/calc-1.png" alt="">
+                        <img class="top-plus__img mb-sm-3 mb-0 me-sm-0 me-3" src="img/4-calc/calc-1.png" alt="">
                         <p class="top-plus__text">
                             Помогли взять более <span>15 МЛН РУБЛЕЙ</span>
                         </p>
@@ -190,7 +217,7 @@
                 <div class="top-plus__card me-sm-3 me-0 mb-3">
                     <div class="substrate-calc"></div>
                     <div class="top-plus__content d-flex flex-sm-column align-items-sm-start flex-row align-items-center">
-                        <img class="top-plus__img mb-sm-3 mb-0 me-sm-0 me-3" src="../img/4-calc/calc-2.png" alt="">
+                        <img class="top-plus__img mb-sm-3 mb-0 me-sm-0 me-3" src="img/4-calc/calc-2.png" alt="">
                         <p class="top-plus__text">
                             Более <span>50 БАНКОВ </span> партнеров
                         </p>
@@ -199,7 +226,7 @@
                 <div class="top-plus__card me-sm-3 me-0 mb-3">
                     <div class="substrate-calc"></div>
                     <div class="top-plus__content d-flex flex-sm-column align-items-sm-start flex-row align-items-center">
-                        <img class="top-plus__img mb-sm-3 mb-0 me-sm-0 me-3" src="../img/4-calc/calc-3.png" alt="">
+                        <img class="top-plus__img mb-sm-3 mb-0 me-sm-0 me-3" src="img/4-calc/calc-3.png" alt="">
                         <p class="top-plus__text">
                             Одобрения с <span>ПЛОХОЙ ИСТОРИЕЙ</span> кредита
                         </p>
@@ -208,7 +235,7 @@
                 <div class="top-plus__card">
                     <div class="substrate-calc"></div>
                     <div class="top-plus__content d-flex flex-sm-column align-items-sm-start flex-row align-items-center">
-                        <img class="top-plus__img mb-sm-3 mb-0 me-sm-0 me-3" src="../img/4-calc/calc-4.png" alt="">
+                        <img class="top-plus__img mb-sm-3 mb-0 me-sm-0 me-3" src="img/4-calc/calc-4.png" alt="">
                         <p class="top-plus__text">
                             <span>БЕЗ СПРАВОК</span> и поручителей
                         </p>
@@ -297,19 +324,19 @@
                 </div>
             </div>
             <!-- <img class="money-bag" src="../img/4-calc/c-money-bag.png" alt=""> -->
-            <img class="money-bag" src="../img/4-calc/bag-money-big.png" alt="">
-            <img class="c-element-one-abs position-absolute" src="../img/4-calc/c-element-one.png" alt="">
+            <img class="money-bag" src="img/4-calc/bag-money-big.png" alt="">
+            <img class="c-element-one-abs position-absolute" src="img/4-calc/c-element-one.png" alt="">
             <!-- <img class="c-element-one-abs position-absolute" src="../img/4-calc/c-element-two.png" alt=""> -->
             <!-- <img class="c-element-one-abs position-absolute" src="../img/4-calc/c-element-three.png" alt=""> -->
         </div>
     
     </section>
 
-    <section class="registration position-relative">
+    <section id="reg" class="registration position-relative">
         <div class="container px-3">
             <div class="registration-block position-relative overflow-hidden">
-                <img class="r-man position-absolute d-md-block d-none" src="../img/5-registration/r-man.png" alt="">
-                <img class="r-man-mob position-absolute d-md-none d-block" src="../img/5-registration/r-man-mob.png" alt="">
+                <img class="r-man position-absolute d-md-block d-none" src="img/5-registration/r-man.png" alt="">
+                <img class="r-man-mob position-absolute d-md-none d-block" src="img/5-registration/r-man-mob.png" alt="">
                 <h2 class="title-medium title-registration">
                     Оформим кредит <br> <span>на выгодных условиях</span>
                 </h2>
@@ -369,40 +396,42 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn-general btn-registration mx-auto">Оформить кредит</button>
+                <button class="btn-general btn-registration mx-auto" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Оформить кредит</button>
             </div>
         </div>
-        <img class="reg-element-one position-absolute" src="../img/5-registration/reg-element-one.png" alt="">
-        <img class="reg-element-two position-absolute" src="../img/5-registration/reg-element-two.png" alt="">
+        <img class="reg-element-one position-absolute" src="img/5-registration/reg-element-one.png" alt="">
+        <img class="reg-element-two position-absolute" src="img/5-registration/reg-element-two.png" alt="">
     </section>
 
     <section class="endorsement position-relative overflow-hidden">
         <div class="container">
             <div class="endorsement-block position-relative">
-                <h2 class="title-medium title-endorsement">Поможем получить кредит <br> <span>даже если у вас:</span></h2>
+                <h2 id="endo" class="title-medium title-endorsement">Поможем получить кредит <br> <span>даже если у
+                        вас:</span></h2>
                 <div
                     class="endorsement-content d-flex justify-content-center flex-wrap flex-sm-row flex-column align-items-sm-start align-items-center">
                     <div class="endorsement-content__card d-flex align-items-center overflow-hidden mx-auto mb-3">
-                        <img class="endorsement-img-1 me-2" src="../img/6-endorsement/e-calendar.png" alt="">
+                        <img class="endorsement-img-1 me-2" src="img/6-endorsement/e-calendar.png" alt="">
                         <p class="endorsement-content-card__text">Плохая кредитная история</p>
                     </div>
     
                     <div class="endorsement-content__card d-flex align-items-center overflow-hidden mx-auto mb-3">
-                        <img class="endorsement-img-2 me-2" src="../img/6-endorsement/e-list.png" alt="">
+                        <img class="endorsement-img-2 me-2" src="img/6-endorsement/e-list.png" alt="">
                         <p class="endorsement-content-card__text">Отказали банки</p>
                     </div>
     
                     <div class="endorsement-content__card d-flex align-items-center overflow-hidden mx-auto mb-3">
-                        <img class="endorsement-img-3 me-2" src="../img/6-endorsement/e-clock.png" alt="">
+                        <img class="endorsement-img-3 me-2" src="img/6-endorsement/e-clock.png" alt="">
                         <p class="endorsement-content-card__text">Кредит с просрочками</p>
                     </div>
     
                     <div class="endorsement-content__card d-flex align-items-center overflow-hidden mx-auto mb-3">
-                        <img class="endorsement-img-4 me-2" src="../img/6-endorsement/e-bag.png" alt="">
+                        <img class="endorsement-img-4 me-2" src="img/6-endorsement/e-bag.png" alt="">
                         <p class="endorsement-content-card__text">Кредит без официального трудоустройства</p>
                     </div>
                 </div>
-                <div class="some-block position-relative">
+                <div id="about-us" class="some-block position-relative">
                     <h2 class="title-medium title-some mb-0">Немного <br> <span>о нашей компании</span>
                     </h2>
                     <h1 class="endorsement-big position-absolute">одобрение</h1>
@@ -440,7 +469,7 @@
             </div>
     
         </div>
-        <img class="e-logo position-absolute" src="../img/6-endorsement/e-logo.png" alt="">
+        <img class="e-logo position-absolute" src="img/6-endorsement/e-logo.png" alt="">
     </section>
 
     <section class="help position-relative overflow-hidden">
@@ -462,15 +491,15 @@
                     компании</p>
             </div>
         </div>
-        <img class="h-man position-absolute" src="../img/7-help/h-man.png" alt="">
-        <img class="h-bag-money position-absolute" src="../img/7-help/h-bag-money.png" alt="">
-        <img class="help-abs-1 position-absolute" src="../img/7-help/help-abs-1.png" alt="">
-        <img class="help-abs-2 position-absolute" src="../img/7-help/help-abs-2.png" alt="">
+        <img class="h-man position-absolute" src="img/7-help/h-man.png" alt="">
+        <img class="h-bag-money position-absolute" src="img/7-help/h-bag-money.png" alt="">
+        <img class="help-abs-1 position-absolute" src="img/7-help/help-abs-1.png" alt="">
+        <img class="help-abs-2 position-absolute" src="img/7-help/help-abs-2.png" alt="">
     </section>
 
     <section class="quiz position-relative">
-        <img class="q-hand-money position-absolute" src="../img/8-quiz/q-hand-money.png" alt="">
-        <div class="container">
+        <img class="q-hand-money position-absolute" src="img/8-quiz/q-hand-money.png" alt="">
+        <div id="what" class="container">
     
             <h2 class="title-medium title-top">Просто <br><span>как "раз-два-три"</span></h2>
     
@@ -486,7 +515,7 @@
                             анализ Вашей ситуации</p>
                     </div>
                     <h1 class="top-number-bigger position-absolute">1</h1>
-                    <img class="position-absolute dot-1 d-md-block d-none" src="../img/8-quiz/dot-1.png" alt="">
+                    <img class="position-absolute dot-1 d-md-block d-none" src="img/8-quiz/dot-1.png" alt="">
                 </div>
     
                 <div
@@ -500,7 +529,7 @@
                         <p class="top-number__text">Заключаем договор, подбор оптимальной программы кредитования</p>
                     </div>
                     <h1 class="top-number-bigger position-absolute">2</h1>
-                    <img class="position-absolute dot-2 d-md-block d-none" src="../img/8-quiz/dot-2.png" alt="">
+                    <img class="position-absolute dot-2 d-md-block d-none" src="img/8-quiz/dot-2.png" alt="">
                 </div>
     
                 <div class="top-number-block d-flex flex-md-column flex-row  position-relative">
@@ -548,7 +577,7 @@
                             </div>
                         </form>
                     </div>
-                    <img class="q-book position-absolute" src="../img/8-quiz/q-book.png" alt="">
+                    <img class="q-book position-absolute" src="img/8-quiz/q-book.png" alt="">
                 </div>
             </div>
     
@@ -589,7 +618,7 @@
                             </div>
                         </form>
                     </div>
-                    <img class="q-two position-absolute" src="../img/8-quiz/q-two.png" alt="">
+                    <img class="q-two position-absolute" src="img/8-quiz/q-two.png" alt="">
                 </div>
             </div>
     
@@ -642,7 +671,7 @@
                             </div>
                         </form>
                     </div>
-                    <img class="q-three position-absolute" src="../img/8-quiz/q-three.png" alt="">
+                    <img class="q-three position-absolute" src="img/8-quiz/q-three.png" alt="">
                 </div>
             </div>
     
@@ -670,14 +699,14 @@
                             </div>
                         </form>
                     </div>
-                    <img class="q-four position-absolute" src="../img/8-quiz/q-four.png" alt="">
+                    <img class="q-four position-absolute" src="img/8-quiz/q-four.png" alt="">
                 </div>
             </div>
         </div>
     </section>
 
     <section class="faster position-relative">
-        <img class="faster-man position-absolute" src="../img/9-faster/faster-man.png" alt="">
+        <img class="faster-man position-absolute" src="img/9-faster/faster-man.png" alt="">
         <div class="container">
             <div class="faster-content position-relative">
                 <h2 class="title-medium title-faster">Быстрее, лучше, выгоднее</h2>
@@ -685,7 +714,7 @@
     
                     <div class="faster-block position-relative mt-md-5 mt-0 mb-md-0 mb-5">
                         <div class="faster-sabstrat-one position-absolute"></div>
-                        <img class="f-one-card position-absolute" src="../img/9-faster/f-one-card.png" alt="">
+                        <img class="f-one-card position-absolute" src="img/9-faster/f-one-card.png" alt="">
                         <div class="faster-card">
                             <h4 class="faster-card__title">ВЫ ОБРАТИЛИСЬ К НАМ</h4>
                             <p class="faster-text mb-2">Мы оформляем все документы.
@@ -703,7 +732,7 @@
     
                     <div class="faster-block position-relative">
                         <div class="faster-sabstrat-two position-absolute"></div>
-                        <img class="f-two-card position-absolute" src="../img/9-faster/f-two-card.png" alt="">
+                        <img class="f-two-card position-absolute" src="img/9-faster/f-two-card.png" alt="">
                         <div class="faster-card">
                             <h4 class="faster-card__title text-dark">ВЫ ОБРАТИЛИСЬ К НАМ</h4>
                             <p class="faster-text mb-2">Потратили на это 2-3 дня, оставили много времени и сил в банках
@@ -725,9 +754,161 @@
         </div>
     </section>
 
+    <section id="questions" class="questions">
+        <img class="ques-abs position-absolute" src="img/10-questions/ques-abs.png" alt="">
+        <img class="big-pack position-absolute" src="img/10-questions/big-pack.png" alt="">
+        <div class="container">
+            <div class="questions-block">
+                <h2 class="title-medium title-questions">Остались вопросы?</h2>
+                <div class="questions-content d-flex justify-content-center align-items-start">
+                    <img class="questions-telephone" src="img/10-questions/telephone.png" alt="">
     
+                    <div class="dsfsfd d-flex flex-column">
+                        <div class="questions__question">
+                            <p class="questions__question-title questions__question-title--active">Какие документы
+                                необходимы для получения кредита?</p>
+                            <p class="questions__question-content questions__question-content--active">Если Вы повторно
+                                обращаетесь к нам или даёте рекомендацию знакомым, то получаете скидку 10% на наши услуги
+                            </p>
+                        </div>
+                        <!-- /.questions__question -->
+                        <div class="questions__question">
+                            <p class="questions__question-title">Как мне получить скидку на услуги?
+                            </p>
+                            <p class="questions__question-content">Да, у нас есть скидочная система. Например, при повторном
+                                обращении вы получите скидку в 10% на услуги нашей компании. Также, если по вашей
+                                рекомендации к нам обращается другой клиент, мы предоставим вам скидку в 10%.</p>
+                        </div>
+                        <!-- /.questions__question -->
+                        <div class="questions__question">
+                            <p class="questions__question-title">Какие требования к заемщику?</p>
+                            <p class="questions__question-content">Работаем с каждым, кто хочет оформить кредит, но по
+                                каким-то причинам у него это не получается. Специальных требований к заемщику нет.</p>
+                        </div>
+                        <!-- /.questions__question -->
+                        <div class="questions__question">
+                            <p class="questions__question-title">Нужно ли оплачивать Ваши услуги при <br> отрицательном
+                                решении банка?</p>
+                            <p class="questions__question-content">Нет. Оплата наших услуг происходит только при
+                                положительном решении банка и только после того, как вы получили деньги.</p>
+                        </div>
+                        <!-- /.questions__question -->
+                        <div class="questions__question mb-0">
+                            <p class="questions__question-title">У меня плоха кредитная история, постоянно <br> отказывают
+                                банки, вы можете мне помочь?
+                            </p>
+                            <p class="questions__question-content">Да. Мы помогаем именно в тех случаях, когда у клиента
+                                испорчена кредитная история. Но универсальных решений у нас нет. Каждый случай изучаем
+                                отдельно и предлагаем индивидуальное решение.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="reviews" class="reviews position-relative">
+        <img class="rew-money position-absolute" src="img/11-reviews/rew-money.png" alt="">
+        <img class="reviews-abs position-absolute" src="img/11-reviews/reviews-abs.png" alt="">
+        <div class="container">
+            <div class="revievs-block">
+                <h2 class="title-medium title-reviews">Отзывы<br><span>о нашей компании</span></h2>
     
+                <div class="reviews-content d-sm-flex d-none justify-content-center flex-wrap">
+                    <div class="reviews-content-item m-1">
+                        <a class="reviews-content-link" href="img/11-reviews/rev-img.mp4" data-fancybox>
+                            <img src="img/11-reviews/rev-img.png" alt="">
+                        </a>
+                        <div class="reviews-content-wrapper py-2">
+                            <h2 class="video-block__title text-center mb-1">Валерий Павлов</h2>
+                            <p class="video-block__date text-center">5 декабря 2020 г. </p>
+                        </div>
+                    </div>
+    
+                    <div class="reviews-content-item m-1">
+                        <a class="reviews-content-link" href="img/11-reviews/rev-img.mp4" data-fancybox>
+                            <img src="img/11-reviews/rev-img.png" alt="">
+                        </a>
+                        <div class="reviews-content-wrapper py-2">
+                            <h2 class="video-block__title text-center mb-1">Валерий Павлов</h2>
+                            <p class="video-block__date text-center">5 декабря 2020 г. </p>
+                        </div>
+                    </div>
+    
+                    <div class="reviews-content-item m-1">
+                        <a class="reviews-content-link" href="img/11-reviews/rev-img.mp4" data-fancybox>
+                            <img src="img/11-reviews/rev-img.png" alt="">
+                        </a>
+                        <div class="reviews-content-wrapper py-2">
+                            <h2 class="video-block__title text-center mb-1">Валерий Павлов</h2>
+                            <p class="video-block__date text-center">5 декабря 2020 г. </p>
+                        </div>
+                    </div>
+    
+                    <div class="reviews-content-item m-1">
+                        <a class="reviews-content-link" href="img/11-reviews/rev-img.mp4" data-fancybox>
+                            <img src="img/11-reviews/rev-img.png" alt="">
+                        </a>
+                        <div class="reviews-content-wrapper py-2">
+                            <h2 class="video-block__title text-center mb-1">Валерий Павлов</h2>
+                            <p class="video-block__date text-center">5 декабря 2020 г. </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slider-rev swiper-container d-sm-none d-flex">
+                    <div class="rev-wrapper swiper-wrapper">
+                        <div class="rev-slide swiper-slide">
+                            <div class="reviews-content-item m-1">
+                                <a class="reviews-content-link" href="img/11-reviews/rev-img.mp4" data-fancybox>
+                                    <img src="img/11-reviews/rev-img.png" alt="">
+                                </a>
+                                <div class="reviews-content-wrapper py-2">
+                                    <h2 class="video-block__title text-center mb-1">Валерий Павлов</h2>
+                                    <p class="video-block__date text-center">5 декабря 2020 г. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="endorsement-slide swiper-slide">
+                            <div class="reviews-content-item m-1">
+                                <a class="reviews-content-link" href="img/11-reviews/rev-img.mp4" data-fancybox>
+                                    <img src="img/11-reviews/rev-img.png" alt="">
+                                </a>
+                                <div class="reviews-content-wrapper py-2">
+                                    <h2 class="video-block__title text-center mb-1">Валерий Павлов</h2>
+                                    <p class="video-block__date text-center">5 декабря 2020 г. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="endorsement-slide swiper-slide">
+                            <div class="reviews-content-item m-1">
+                                <a class="reviews-content-link" href="img/11-reviews/rev-img.mp4" data-fancybox>
+                                    <img src="img/11-reviews/rev-img.png" alt="">
+                                </a>
+                                <div class="reviews-content-wrapper py-2">
+                                    <h2 class="video-block__title text-center mb-1">Валерий Павлов</h2>
+                                    <p class="video-block__date text-center">5 декабря 2020 г. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="endorsement-slide swiper-slide">
+                            <div class="reviews-content-item m-1">
+                                <a class="reviews-content-link" href="img/11-reviews/rev-img.mp4" data-fancybox>
+                                    <img src="img/11-reviews/rev-img.png" alt="">
+                                </a>
+                                <div class="reviews-content-wrapper py-2">
+                                    <h2 class="video-block__title text-center mb-1">Валерий Павлов</h2>
+                                    <p class="video-block__date text-center">5 декабря 2020 г. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        </div>
+    </section>
 
     <section class="conditions">
         <div class="container">
@@ -780,7 +961,70 @@
         </div>
     </section>
 
+    <section class="footer">
+        <div class="container">
+            <div
+                class="footer-block d-sm-flex d-none justify-content-between align-items-lg-start align-items-center flex-lg-row flex-column">
     
+                <div class="footer-one d-flex flex-column align-items-center">
+                    <img class="f-logo mb-1" src="img/13-footer/f-logo.png" alt="">
+                    <ul class="f-list ps-lg-4 ps-0 mb-0 d-flex flex-column align-items-lg-start align-items-center">
+                        <li class="f-list-item">График работы:</li>
+                        <li class="f-list-item">ПН - СБ 8:00 - 21:00
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer-two d-flex flex-column align-items-lg-start align-items-center">
+                    <ul class="f-list f-list__element d-flex position-relative">
+                        <li class=""><a class="f-list-item f-list-item__color me-xl-3 me-2" href="#reg">Преимущества</a>
+                        </li>
+                        <li class=""><a class="f-list-item f-list-item__color me-xl-3 me-2" href="#endo">Условия</a></li>
+                        <li class=""><a class="f-list-item f-list-item__color me-xl-3 me-2" href="#about-us">О компании</a>
+                        </li>
+                        <li class=""><a class="f-list-item f-list-item__color me-xl-3 me-2" href="#what">Как получить</a>
+                        </li>
+                        <li class=""><a class="f-list-item f-list-item__color me-xl-3 me-2" href="#questions">FAQ</a></li>
+                        <li class=""><a class="f-list-item f-list-item__color" href="#reviews">Отзывы</a></li>
+                    </ul>
+                    <p class="footer-addres">г. Москва, ул. Кремлевская, д. 12, оф. 512</p>
+                </div>
+    
+                <div class="footer-three d-flex flex-column align-items-lg-start align-items-center">
+                    <p class="f-list-item mb-xl-4 mb-2">Не является публичной офертой</p>
+                    <p class="f-list-item">Подбор кредитно-финансовых услуг, <br>
+                        квалифицированная помощь юристов</p>
+                </div>
+            </div>
+    
+            <div class="footer-mobile d-sm-none d-flex align-items-center flex-column">
+                <div class="footer-mobile__content">
+                    <img class="f-logo mb-4" src="img/13-footer/f-logo.png" alt="">
+                    <div class="footer-list-mobile-block d-flex justify-content-between">
+                        <ul class="footer-list-mobile">
+                            <li class="mb-2"><a class="f-list-item f-list-item__color" href="#reg">Преимущества</a></li>
+                            <li class="mb-2"><a class="f-list-item f-list-item__color" href="#endo">Условия</a></li>
+                            <li class="mb-2"><a class="f-list-item f-list-item__color" href="#about-us">О компании</a></li>
+                            <li class="mb-2"><a class="f-list-item f-list-item__color" href="#what">Как получить</a></li>
+                            <li class="mb-2"><a class="f-list-item f-list-item__color" href="#questions">FAQ</a></li>
+                            <li class="mb-2"><a class="f-list-item f-list-item__color" href="#reviews">Отзывы</a></li>
+                        </ul>
+                        <div class="double-block__list">
+                            <p class="footer-mob-text">График работы:</p>
+                            <p class="footer-mob-text position-relative">ПН - СБ <br>8:00 - 21:00</p>
+                            <p class="footer-mob-text">г. Москва <br> ул. Кремлевская <br> д. 12, оф. 512</p>
+                        </div>
+                    </div>
+                    <div class="footer-three position-relative d-flex flex-column align-items-lg-start align-items-center">
+                        <p class="f-list-item mb-3">Не является публичной офертой</p>
+                        <p class="f-list-item">Подбор кредитно-финансовых услуг, <br>
+                            квалифицированная помощь юристов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 
@@ -789,6 +1033,8 @@
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <!-- J-query -->
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
     <script src="js/main.min.js"></script>
 </body>

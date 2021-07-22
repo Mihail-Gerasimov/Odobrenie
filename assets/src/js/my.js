@@ -8,15 +8,6 @@ window.addEventListener('DOMContentLoaded', () => {
         rangeSumInput = document.querySelector('.range__input--sum'),
         dateText = document.querySelector('.calc__input-text-right--date');
 
-    // accordion
-
-    questions.forEach(question => {
-        question.addEventListener('click', () => {
-            question.classList.toggle('questions__question-title--active');
-            question.nextElementSibling.classList.toggle('questions__question-content--active');
-        });
-    });
-
     // range + calc
 
     // маска
@@ -160,3 +151,43 @@ const swiper = new Swiper('.slider-endorsement', {
     },
 });
 
+
+// accordion
+const questions = document.querySelectorAll('.questions__question-title');
+questions.forEach(question => {
+    question.addEventListener('click', () => {
+        question.classList.toggle('questions__question-title--active');
+        question.nextElementSibling.classList.toggle('questions__question-content--active');
+    });
+});
+
+
+// slider reviews
+const s = new Swiper('.slider-rev', {
+    breakpoints: {
+        474: {
+            slidesPerView: 1.7,
+            centeredSlides: 0,
+            loop: false,
+            spaceBetween: 20
+        },
+        425: {
+            slidesPerView: 1.2,
+            spaceBetween: 1
+        },
+        375: {
+            slidesPerView: 1.2,
+            spaceBetween: 1
+        },
+        340: {
+            slidesPerView: 1.1,
+            spaceBetween: 1
+        },
+        320: {
+            loop: true,
+            centeredSlides: 0,
+            slidesPerView: 1,
+            spaceBetween: 1
+        }
+    },
+});
