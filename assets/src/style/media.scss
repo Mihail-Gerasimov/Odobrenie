@@ -1238,6 +1238,14 @@
     // quiz
 
     // faster
+    .faster-text {
+        font-size: 13px;
+        line-height: 17px;
+        max-width: 270px;
+    }
+    .faster-sabstrat-two {
+        height: 290px;
+    }
     // faster
 
     // questions
@@ -1456,7 +1464,6 @@
         left: 88px;
         transform: none;
     }
-
     // quiz
 
     // faster
@@ -1845,7 +1852,7 @@
         font-size: 14px;
         line-height: 18px;
         margin-bottom: 30px;
-        max-width: 255px;
+        max-width: 290px;
     }
     .quiz-substrate {
         height: 538px;
@@ -2192,10 +2199,11 @@
     // quiz
     // faster
     .faster-text {
-        max-width: 220px;
+        max-width: 223px;
     }
     .faster-card {
-        padding: 40px 20px 50px;
+        padding: 40px 15px 50px;
+        width: 260px;
     }
     .faster-sabstrat-one {
         top: 20px;
