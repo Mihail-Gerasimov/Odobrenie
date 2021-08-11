@@ -1669,6 +1669,10 @@
     // header
 
     // calc
+    .credit-yes__title {
+        font-size: 36px;
+        line-height: 42px;
+    }
     .calc {
         margin-top: -10px;
         padding: 440px 0 90px;
@@ -1681,7 +1685,7 @@
     .top-plus__content {
         padding: 20px 10px 20px;
         width: 100%;
-        min-width: 270px;
+        min-width: 280px;
     }
     .top-plus {
         top: -520px;
@@ -1701,8 +1705,9 @@
         line-height: 18px;
     }
     .calc__title {
-        font-size: 27px;
-        line-height: 23px;
+        font-size: 30px;
+        line-height: 35px;
+        text-transform: inherit;
     }
     .credis-yes__text--mobile {
         font-size: 9px;
@@ -1727,6 +1732,8 @@
         margin-bottom: 30px;
     }
     .calc__pt {
+        font-size: 24px;
+        line-height: 30px;
         width: 100%;
         text-align: center;
     }
@@ -1743,20 +1750,25 @@
         width: fit-content;
     }
     .calc__input {
+        font-size: 24px;
+        line-height: 30px;
         text-align: center;
         padding-left: 40px;
     }
     .calc__input-text-right {
-        font-size: 19px;
-        line-height: 23px;
-        top: 34.5%;
-        right: 116px;
+        font-size: 24px;
+        line-height: 30px;
+        top: 32.5%;
+        right: 98px;
     }
     .calc__input-text-right--date {
-        right: 145px;
+        right: 137px;
     }
     .calc__row {
         width: 380px;
+    }
+    .top-plus__text {
+        font-size: 17px;
     }
     // calc
 
@@ -1801,6 +1813,7 @@
     }
     .sert-block__text {
         margin-bottom: 30px;
+        font-size: 15px;
     }
     .endorsement-big {
         font-size: 40px;
@@ -1893,6 +1906,7 @@
     .top-number-step {
         font-size: 15px;
         line-height: 19px;
+        text-transform: uppercase;
     }
     .top-number__text {
         max-width: 170px;
@@ -1907,16 +1921,21 @@
     .faster {
         padding: 40px 0 60px;
     }
+    .faster-text {
+        font-size: 14px;
+        line-height: 17px;
+    }
     // faster
 
     // questions
     .questions__question-title {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 16px;
+        line-height: 19px;
         padding: 16px;
     }
     .questions__question-content {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 19px;
     }
     .questions__question:nth-child(5) .questions__question-title {
         padding: 8px 7px 7px 20px;
@@ -1946,10 +1965,10 @@
 
     // footer
     .f-logo {
-        width: 155px;
+        width: 160px;
     }
     .f-list-item {
-        font-size: 14px;
+        font-size: 15px;
     }
     .footer-three::before {
         display: table;
@@ -2086,16 +2105,13 @@
     // header
     // calc
     .calc__input-text-right--date {
-        right: 121px;
+        right: 110px !important;
     }
     .calc__input-text-right {
-        right: 90px;
+        right: 70px;
     }
     .calc__row {
         width: 330px;
-    }
-    .calc__title {
-        font-size: 22px;
     }
     .calc-offer__title {
         font-size: 12px;
@@ -2242,10 +2258,10 @@
     }
     // calc
     .calc__input-text-right {
-        right: 65px;
+        right: 45px;
     }
     .calc__input-text-right--date {
-        right: 92px;
+        right: 85px !important;
     }
     .calc__row {
         width: 275px;

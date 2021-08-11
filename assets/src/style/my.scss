@@ -53,10 +53,11 @@
     padding: 58px 0 58px 20px;
     width: 280px;
     background: #26943e;
-    border-radius: 0 0 5px 0;
-    border-right: 1px solid #231616;
+    border-radius: 0 0 0 5px;
+    border-left: 1px solid #231616;
     border-bottom: 1px solid #231313;
-    left: 0;
+    // left: 0;
+    right: 0;
     top: -360%;
 }
 .mobile-menu-active {
@@ -64,8 +65,8 @@
     z-index: 10;
 }
 .closed {
-    right: 13px;
-    top: -45px;
+    right: 17px;
+    top: -35px;
 }
 // nav
 

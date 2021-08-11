@@ -10647,10 +10647,10 @@ button:focus {
   padding: 58px 0 58px 20px;
   width: 280px;
   background: #26943e;
-  border-radius: 0 0 5px 0;
-  border-right: 1px solid #231616;
+  border-radius: 0 0 0 5px;
+  border-left: 1px solid #231616;
   border-bottom: 1px solid #231313;
-  left: 0;
+  right: 0;
   top: -360%; }
 
 .mobile-menu-active {
@@ -10658,8 +10658,8 @@ button:focus {
   z-index: 10; }
 
 .closed {
-  right: 13px;
-  top: -45px; }
+  right: 17px;
+  top: -35px; }
 
 .header {
   padding-top: 140px;
@@ -12863,6 +12863,9 @@ button:focus {
     width: 261px; }
   .h-three-element {
     top: 368px; }
+  .credit-yes__title {
+    font-size: 36px;
+    line-height: 42px; }
   .calc {
     margin-top: -10px;
     padding: 440px 0 90px; }
@@ -12873,7 +12876,7 @@ button:focus {
   .top-plus__content {
     padding: 20px 10px 20px;
     width: 100%;
-    min-width: 270px; }
+    min-width: 280px; }
   .top-plus {
     top: -520px; }
   .top-plus__img {
@@ -12887,8 +12890,9 @@ button:focus {
     font-size: 13px;
     line-height: 18px; }
   .calc__title {
-    font-size: 27px;
-    line-height: 23px; }
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: inherit; }
   .credis-yes__text--mobile {
     font-size: 9px;
     line-height: 11px; }
@@ -12907,6 +12911,8 @@ button:focus {
   .calc-offer--mobile {
     margin-bottom: 30px; }
   .calc__pt {
+    font-size: 24px;
+    line-height: 30px;
     width: 100%;
     text-align: center; }
   .calc-offer__text {
@@ -12924,17 +12930,21 @@ button:focus {
     width: -moz-fit-content;
     width: fit-content; }
   .calc__input {
+    font-size: 24px;
+    line-height: 30px;
     text-align: center;
     padding-left: 40px; }
   .calc__input-text-right {
-    font-size: 19px;
-    line-height: 23px;
-    top: 34.5%;
-    right: 116px; }
+    font-size: 24px;
+    line-height: 30px;
+    top: 32.5%;
+    right: 98px; }
   .calc__input-text-right--date {
-    right: 145px; }
+    right: 137px; }
   .calc__row {
     width: 380px; }
+  .top-plus__text {
+    font-size: 17px; }
   .r-man-mob {
     right: -115px;
     bottom: 210px; }
@@ -12960,7 +12970,8 @@ button:focus {
   .e-logo {
     top: 49px; }
   .sert-block__text {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-size: 15px; }
   .endorsement-big {
     font-size: 40px;
     line-height: 49px;
@@ -13024,7 +13035,8 @@ button:focus {
     left: 88px; }
   .top-number-step {
     font-size: 15px;
-    line-height: 19px; }
+    line-height: 19px;
+    text-transform: uppercase; }
   .top-number__text {
     max-width: 170px;
     font-size: 14px; }
@@ -13032,12 +13044,16 @@ button:focus {
     margin-bottom: 35px; }
   .faster {
     padding: 40px 0 60px; }
-  .questions__question-title {
+  .faster-text {
     font-size: 14px;
-    line-height: 18px;
+    line-height: 17px; }
+  .questions__question-title {
+    font-size: 16px;
+    line-height: 19px;
     padding: 16px; }
   .questions__question-content {
-    font-size: 14px; }
+    font-size: 16px;
+    line-height: 19px; }
   .questions__question:nth-child(5) .questions__question-title {
     padding: 8px 7px 7px 20px; }
   .questions__question:nth-child(5) .questions__question-title br {
@@ -13051,9 +13067,9 @@ button:focus {
   .reviews {
     padding: 35px 0 35px; }
   .f-logo {
-    width: 155px; }
+    width: 160px; }
   .f-list-item {
-    font-size: 14px; }
+    font-size: 15px; }
   .footer-three::before {
     display: table;
     content: "";
@@ -13123,13 +13139,11 @@ button:focus {
   .h-three-element {
     top: 310px; }
   .calc__input-text-right--date {
-    right: 121px; }
+    right: 110px !important; }
   .calc__input-text-right {
-    right: 90px; }
+    right: 70px; }
   .calc__row {
     width: 330px; }
-  .calc__title {
-    font-size: 22px; }
   .calc-offer__title {
     font-size: 12px;
     line-height: 16px; }
@@ -13227,9 +13241,9 @@ button:focus {
     top: 269px;
     right: 25px; }
   .calc__input-text-right {
-    right: 65px; }
+    right: 45px; }
   .calc__input-text-right--date {
-    right: 92px; }
+    right: 85px !important; }
   .calc__row {
     width: 275px; }
   .h-bag-money {
