@@ -10419,7 +10419,6 @@ progress {
 .btn-general {
   background: #26943e;
   border-radius: 5px;
-  font-family: Bai Jamjuree;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -10440,7 +10439,6 @@ progress {
     line-height: 25px; } }
 
 .title-medium {
-  font-family: Bai Jamjuree;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -10463,8 +10461,11 @@ progress {
 
 @media (max-width: 575px) {
   .title-medium {
+    font-family: "Roboto", sans-serif;
     font-size: 30px;
-    line-height: 35px; } }
+    line-height: 35px; }
+  .title-medium span {
+    font-family: "Bai Jamjuree", sans-serif; } }
 
 .title-medium span {
   font-style: normal;
@@ -10569,31 +10570,35 @@ button:focus {
     max-width: 576px;
     padding: 0 20px 0 20px; } }
 
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../fonts/gilroy/gilroy-bold.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/gilroy/gilroy-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy/gilroy-bold.woff2") format("woff2"), url("../fonts/gilroy/gilroy-bold.woff") format("woff"), url("../fonts/gilroy/gilroy-bold.ttf") format("truetype"), url("../fonts/gilroy/gilroy-bold.svg#gilroy-bold") format("svg");
+  /* Chrome < 4, Legacy iOS */ }
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../fonts/gilroy/gilroy-medium.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/gilroy/gilroy-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy/gilroy-medium.woff2") format("woff2"), url("../fonts/gilroy/gilroy-medium.woff") format("woff"), url("../fonts/gilroy-medium.ttf") format("truetype"), url("../fonts/gilroy/gilroy-medium.svg#gilroy-medium") format("svg");
+  /* Chrome < 4, Legacy iOS */ }
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("../fonts/gilroy/gilroy-regular.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/gilroy/gilroy-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy/gilroy-regular.woff2") format("woff2"), url("../fonts/gilroy/gilroy-regular.woff") format("woff"), url("../fonts/gilroy-regular.ttf") format("truetype"), url("../fonts/gilroy/gilroy-regular.svg#gilroy-regular") format("svg");
+  /* Chrome < 4, Legacy iOS */ }
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("../fonts/gilroy/gilroy-semibold.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../fonts/gilroy/gilroy-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy/gilroy-semibold.woff2") format("woff2"), url("../fonts/gilroy/gilroy-semibold.woff") format("woff"), url("../fonts/gilroy/gilroy-semibold.ttf") format("truetype"), url("../fonts/gilroy/gilroy-semibold.svg#gilroy-semibold") format("svg");
+  /* Chrome < 4, Legacy iOS */ }
+
 /* base */
-@font-face {
-  font-family: 'Gilroy', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  src: url(./gilroy-bold.ttf) format(tryetype); }
-
-@font-face {
-  font-family: 'Gilroy', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  src: url(./gilroy-regular.ttf) format(tryetype); }
-
-@font-face {
-  font-family: 'Gilroy', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  src: url(./gilroy-medium.ttf) format(tryetype); }
-
-@font-face {
-  font-family: 'Gilroy', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  src: url(./gilroy-semibold.ttf) format(tryetype); }
-
 .nav-text {
   font-style: normal;
   font-weight: 600;
@@ -10624,7 +10629,7 @@ button:focus {
   background-color: #26943e; }
 
 .nav-list__item {
-  font-family: Gilroy;
+  font-family: "Gilroy-Bold";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -10707,7 +10712,7 @@ button:focus {
   color: #26943e; }
 
 .header-text {
-  font-family: Gilroy;
+  font-family: "Gilroy-Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 26px;
@@ -10739,7 +10744,7 @@ button:focus {
   line-height: 24px; }
 
 .header-card__info {
-  font-family: Gilroy;
+  font-family: "Gilroy-Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -10783,16 +10788,19 @@ button:focus {
   padding: 45px 20px 48px;
   border: 1px solid #e0e0e0;
   border-radius: 0px 0px 5px 5px;
-  width: 230px; }
+  width: 235px; }
 
 .top-plus__text {
-  font-family: Bai Jamjuree;
+  font-family: "Gilroy-Regular";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   line-height: 120%; }
 
 .top-plus__text span {
+  font-style: normal;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
   color: #26943e; }
 
 .calc input {
@@ -10815,7 +10823,6 @@ button:focus {
   line-height: 17px; }
 
 .calc__title {
-  font-family: Bai Jamjuree;
   font-style: normal;
   font-weight: bold;
   font-size: 55px;
@@ -10834,6 +10841,7 @@ button:focus {
   color: #26943e; }
 
 .credit-yes__title {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 45px;
@@ -10883,6 +10891,7 @@ button:focus {
   text-transform: uppercase; }
 
 .calc-offer__text {
+  font-family: "Gilroy-SemiBold";
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -10937,6 +10946,7 @@ button:focus {
   position: absolute;
   top: 22%;
   left: 20px;
+  font-family: "Gilroy-Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -11064,7 +11074,6 @@ button:focus {
 
 .registrations-contents__title {
   position: relative;
-  font-family: Bai Jamjuree;
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
@@ -11088,7 +11097,7 @@ button:focus {
   background-image: url(../img/5-registration/list-fon.png); }
 
 .registration-list__item {
-  font-family: Gilroy;
+  font-family: "Gilroy-SemiBold";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -11133,10 +11142,10 @@ button:focus {
   padding-right: 10px; }
 
 .endorsement-content-card__text {
-  font-family: Gilroy;
+  font-family: "Gilroy-SemiBold";
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 120%;
   color: #ffffff; }
 
@@ -11157,6 +11166,7 @@ button:focus {
   margin-bottom: 130px; }
 
 .endorsement-big {
+  font-family: "Montserrat", sans-serif;
   z-index: -1;
   font-style: normal;
   font-weight: 800;
@@ -11172,13 +11182,13 @@ button:focus {
   top: -75px; }
 
 .sert-block__text {
-  font-family: Gilroy;
+  font-family: "Gilroy-Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 130%;
   color: #2f2f2f;
-  max-width: 550px; }
+  max-width: 605px; }
 
 .sert-block {
   min-width: 0; }
@@ -11212,7 +11222,7 @@ button:focus {
   bottom: 0; }
 
 .help-text {
-  font-family: Gilroy;
+  font-family: "Gilroy-Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -11252,7 +11262,7 @@ button:focus {
   display: block; }
 
 .help-info {
-  font-family: Gilroy;
+  font-family: "Gilroy-Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -11283,7 +11293,8 @@ button:focus {
   color: #efefef;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  font-family: "Montserrat", sans-serif; }
 
 .top-number__element {
   transform: skewX(-30deg);
@@ -11310,6 +11321,7 @@ button:focus {
   color: #2f2f2f; }
 
 .top-number__text {
+  font-family: "Gilroy-Medium";
   width: 100%;
   max-width: 260px;
   font-style: normal;
@@ -11650,8 +11662,8 @@ button:focus {
   height: 0;
   overflow: hidden;
   transition: 0.5s;
-  max-width: 600px;
-  font-family: Gilroy;
+  max-width: 770px;
+  font-family: "Gilroy-Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -11700,7 +11712,6 @@ button:focus {
   overflow: hidden; }
 
 .video-block__title {
-  font-family: Bai Jamjuree;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -11708,7 +11719,7 @@ button:focus {
   color: #26943e; }
 
 .video-block__date {
-  font-family: Gilroy;
+  font-family: "Gilroy-Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -11723,7 +11734,7 @@ button:focus {
 
 .conditions-text {
   text-align: center;
-  font-family: Gilroy;
+  font-family: "Gilroy-Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -11735,6 +11746,7 @@ button:focus {
   background-color: #ffffff; }
 
 .f-list-item {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -12110,6 +12122,10 @@ button:focus {
     top: 324px; }
   .calc__title {
     top: 220px; }
+  .top-plus__content {
+    width: 217px; }
+  .top-plus__text {
+    font-size: 16px; }
   .r-man {
     width: 450px; }
   .endorsement-big {
@@ -12433,7 +12449,7 @@ button:focus {
     top: -400px; }
   .top-plus__content {
     padding: 20px 10px 20px;
-    width: 170px; }
+    width: 175px; }
   .top-plus__text {
     font-size: 14px; }
   .calc {
@@ -12651,6 +12667,8 @@ button:focus {
     width: 45px;
     right: 62px;
     top: 248px; }
+  .registration-block {
+    overflow: hidden; }
   .title-registration {
     margin-bottom: 50px; }
   .registration-contents-element__item {
@@ -12874,7 +12892,7 @@ button:focus {
     transform: translateX(-50%);
     padding-left: 0px; }
   .top-plus__content {
-    padding: 20px 10px 20px;
+    padding: 20px 9px 20px;
     width: 100%;
     min-width: 280px; }
   .top-plus {
@@ -12892,7 +12910,10 @@ button:focus {
   .calc__title {
     font-size: 30px;
     line-height: 35px;
-    text-transform: inherit; }
+    text-transform: inherit;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900; }
   .credis-yes__text--mobile {
     font-size: 9px;
     line-height: 11px; }
@@ -12996,6 +13017,8 @@ button:focus {
     width: 375px; }
   .help-abs-2 {
     right: -32px; }
+  .title-quiz {
+    font-size: 28px; }
   .quiz .container {
     padding: 0; }
   .quiz-substrate-seven {

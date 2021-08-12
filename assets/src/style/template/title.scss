@@ -1,5 +1,4 @@
 .title-medium {
-    font-family: Bai Jamjuree;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -24,8 +23,12 @@
 }
 @media (max-width: 575px) {
     .title-medium {
+        font-family: "Roboto", sans-serif;
         font-size: 30px;
         line-height: 35px;
+    }
+    .title-medium span {
+        font-family: "Bai Jamjuree", sans-serif;
     }
 }
 .title-medium span {

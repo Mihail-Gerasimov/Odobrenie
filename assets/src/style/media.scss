@@ -452,6 +452,12 @@
     .calc__title {
         top: 220px;
     }
+    .top-plus__content {
+        width: 217px;
+    }
+    .top-plus__text {
+        font-size: 16px;
+    }
     // calc
 
     // registration
@@ -952,7 +958,7 @@
     }
     .top-plus__content {
         padding: 20px 10px 20px;
-        width: 170px;
+        width: 175px;
     }
     .top-plus__text {
         font-size: 14px;
@@ -1325,6 +1331,9 @@
     // calc
 
     // registration
+    .registration-block {
+        overflow: hidden;
+    }
     .title-registration {
         margin-bottom: 50px;
     }
@@ -1683,7 +1692,7 @@
         padding-left: 0px;
     }
     .top-plus__content {
-        padding: 20px 10px 20px;
+        padding: 20px 9px 20px;
         width: 100%;
         min-width: 280px;
     }
@@ -1708,6 +1717,9 @@
         font-size: 30px;
         line-height: 35px;
         text-transform: inherit;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 900;
     }
     .credis-yes__text--mobile {
         font-size: 9px;
@@ -1854,6 +1866,9 @@
     // help
 
     // quiz
+    .title-quiz {
+        font-size: 28px;
+    }
     .quiz .container {
         padding: 0;
     }

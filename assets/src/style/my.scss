@@ -30,7 +30,7 @@
     background-color: #26943e;
 }
 .nav-list__item {
-    font-family: Gilroy;
+    font-family: "Gilroy-Bold";
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -118,7 +118,7 @@
     color: #26943e;
 }
 .header-text {
-    font-family: Gilroy;
+    font-family: "Gilroy-Medium";
     font-style: normal;
     font-weight: 500;
     font-size: 26px;
@@ -150,7 +150,7 @@
     line-height: 24px;
 }
 .header-card__info {
-    font-family: Gilroy;
+    font-family: "Gilroy-Regular";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -197,16 +197,19 @@
     padding: 45px 20px 48px;
     border: 1px solid #e0e0e0;
     border-radius: 0px 0px 5px 5px;
-    width: 230px;
+    width: 235px;
 }
 .top-plus__text {
-    font-family: Bai Jamjuree;
+    font-family: "Gilroy-Regular";
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
     line-height: 120%;
 }
 .top-plus__text span {
+    font-style: normal;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
     color: #26943e;
 }
 .calc input {
@@ -233,7 +236,6 @@
 }
 
 .calc__title {
-    font-family: Bai Jamjuree;
     font-style: normal;
     font-weight: bold;
     font-size: 55px;
@@ -252,6 +254,7 @@
     color: #26943e;
 }
 .credit-yes__title {
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 45px;
@@ -308,6 +311,7 @@
 }
 
 .calc-offer__text {
+    font-family: "Gilroy-SemiBold";
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -370,6 +374,7 @@
     position: absolute;
     top: 22%;
     left: 20px;
+    font-family: "Gilroy-Regular";
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -512,7 +517,6 @@
 }
 .registrations-contents__title {
     position: relative;
-    font-family: Bai Jamjuree;
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
@@ -536,7 +540,7 @@
     background-image: url(../img/5-registration/list-fon.png);
 }
 .registration-list__item {
-    font-family: Gilroy;
+    font-family: "Gilroy-SemiBold";
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -584,10 +588,10 @@
     padding-right: 10px;
 }
 .endorsement-content-card__text {
-    font-family: Gilroy;
+    font-family: "Gilroy-SemiBold";
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 120%;
     color: #ffffff;
 }
@@ -608,6 +612,7 @@
     margin-bottom: 130px;
 }
 .endorsement-big {
+    font-family: "Montserrat", sans-serif;
     z-index: -1;
     font-style: normal;
     font-weight: 800;
@@ -621,13 +626,13 @@
     top: -75px;
 }
 .sert-block__text {
-    font-family: Gilroy;
+    font-family: "Gilroy-Regular";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 130%;
     color: #2f2f2f;
-    max-width: 550px;
+    max-width: 605px;
 }
 .sert-block {
     min-width: 0;
@@ -664,7 +669,7 @@
     bottom: 0;
 }
 .help-text {
-    font-family: Gilroy;
+    font-family: "Gilroy-Regular";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -704,7 +709,7 @@
     display: block;
 }
 .help-info {
-    font-family: Gilroy;
+    font-family: "Gilroy-Regular";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -739,6 +744,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    font-family: "Montserrat", sans-serif;
 }
 .top-number__element {
     transform: skewX(-30deg);
@@ -765,6 +771,7 @@
     color: #2f2f2f;
 }
 .top-number__text {
+    font-family: "Gilroy-Medium";
     width: 100%;
     max-width: 260px;
     font-style: normal;
@@ -1113,8 +1120,8 @@
     height: 0;
     overflow: hidden;
     transition: 0.5s;
-    max-width: 600px;
-    font-family: Gilroy;
+    max-width: 770px;
+    font-family: "Gilroy-Regular";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -1167,7 +1174,6 @@
     overflow: hidden;
 }
 .video-block__title {
-    font-family: Bai Jamjuree;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -1175,7 +1181,7 @@
     color: #26943e;
 }
 .video-block__date {
-    font-family: Gilroy;
+    font-family: "Gilroy-Regular";
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -1193,7 +1199,7 @@
 }
 .conditions-text {
     text-align: center;
-    font-family: Gilroy;
+    font-family: "Gilroy-Regular";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1208,6 +1214,7 @@
     background-color: #ffffff;
 }
 .f-list-item {
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
