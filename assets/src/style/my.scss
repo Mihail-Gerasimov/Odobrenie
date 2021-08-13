@@ -90,7 +90,6 @@
     color: #26943e;
 }
 .header-six {
-    font-family: Bai Jamjuree;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -99,7 +98,7 @@
     z-index: 0;
     &::before {
         position: absolute;
-        width: 445px;
+        width: 500px;
         height: 70px;
         display: table;
         content: "";
@@ -107,7 +106,7 @@
         background-repeat: no-repeat;
         left: -35px;
         background-size: contain;
-        top: 9px;
+        top: 5px;
         z-index: -1;
     }
 }
@@ -143,7 +142,7 @@
     display: none;
 }
 .header-card__text {
-    font-family: Bai Jamjuree;
+    margin-top: 2px;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -687,7 +686,7 @@
     background: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
-    font-family: Gilroy;
+    font-family: "Gilroy-Regular";
     font-style: normal;
     font-weight: normal;
     font-size: 20px;

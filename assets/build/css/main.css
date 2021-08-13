@@ -10685,7 +10685,6 @@ button:focus {
   color: #26943e; }
 
 .header-six {
-  font-family: Bai Jamjuree;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -10694,7 +10693,7 @@ button:focus {
   z-index: 0; }
   .header-six::before {
     position: absolute;
-    width: 445px;
+    width: 500px;
     height: 70px;
     display: table;
     content: "";
@@ -10702,7 +10701,7 @@ button:focus {
     background-repeat: no-repeat;
     left: -35px;
     background-size: contain;
-    top: 9px;
+    top: 5px;
     z-index: -1; }
 
 .header-six span {
@@ -10737,7 +10736,7 @@ button:focus {
   display: none; }
 
 .header-card__text {
-  font-family: Bai Jamjuree;
+  margin-top: 2px;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -11242,7 +11241,7 @@ button:focus {
   background: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
-  font-family: Gilroy;
+  font-family: "Gilroy-Regular";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -11908,7 +11907,9 @@ button:focus {
   .header-six {
     padding-left: 30px; }
   .header-six::before {
-    left: 0px; }
+    left: 0px;
+    top: 7px;
+    width: 470px; }
   .registrations-contents__title::before {
     left: -9px;
     background-size: 40px;
@@ -12425,8 +12426,8 @@ button:focus {
     font-size: 15px;
     line-height: 120%; }
   .header-six::before {
-    width: 350px;
-    top: 4px; }
+    width: 370px;
+    top: 2px; }
   .btn-header {
     max-width: 320px;
     margin-bottom: 50px; }
@@ -12712,6 +12713,14 @@ button:focus {
     bottom: inherit;
     top: 307px;
     right: 15px; }
+  .registration-content {
+    padding-left: 17px !important; }
+  .registrations-contents__title::before {
+    top: -2px;
+    left: -17px;
+    background-size: 35px;
+    width: 35px;
+    height: 35px; }
   .title-endorsement {
     margin-bottom: 30px; }
   .endorsement-img-1 {
@@ -12819,14 +12828,14 @@ button:focus {
   .header {
     background-image: url(../img/3-header/h-fon-mob.png);
     background-repeat: no-repeat;
-    background-position-y: -150px;
+    background-position-y: -125px;
     background-position-x: -1px;
-    background-size: 609px auto; }
+    background-size: 576px; }
   .header-text {
     display: none; }
   .title-header {
-    width: 215px;
-    margin: 0 auto;
+    width: 225px;
+    margin: 0 auto 15px !important;
     font-size: 30px;
     line-height: 37px;
     text-align: center; }
@@ -12838,13 +12847,13 @@ button:focus {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin: 0 auto 410px !important; }
+    margin: 0 auto 422px !important; }
   .header-six span {
     font-size: 22px;
     line-height: 27px; }
   .header-six::before {
-    width: 205px;
-    top: 0px;
+    width: 225px;
+    top: -2px;
     height: 38px;
     left: -22px; }
   .header-card {
@@ -12966,9 +12975,15 @@ button:focus {
     width: 380px; }
   .top-plus__text {
     font-size: 17px; }
+  .reg-element-two {
+    display: none; }
+  .reg-element-img-mob {
+    width: 70px;
+    top: 295px;
+    right: 15px; }
   .r-man-mob {
     right: -115px;
-    bottom: 210px; }
+    bottom: 140px; }
   .registration-content-elements:first-child .registration-contents-element__item:nth-child(3)::after {
     width: 280px; }
   .registration-content-elements:last-child .registration-contents-element__item:first-child::after {
@@ -12980,6 +12995,19 @@ button:focus {
   .btn-registration {
     max-width: 275px;
     margin: 0px 0 0 !important; }
+  .registration-list__item {
+    font-family: "Gilroy-Regular";
+    font-weight: normal; }
+  .title-some span {
+    letter-spacing: 1px; }
+  .some-block {
+    margin-bottom: 30px; }
+  .endorsement-content-card__text {
+    font-family: "Gilroy-Regular";
+    font-weight: normal;
+    font-size: 14px; }
+  .endorsement-content {
+    margin-bottom: 70px; }
   .endorsement-content__card:first-child {
     margin: 0 100px 20px 0 !important; }
   .endorsement-content__card:nth-child(2) {
@@ -12998,17 +13026,22 @@ button:focus {
     line-height: 49px;
     top: 6px; }
   .e-element-one-abs {
-    top: 533px;
+    top: 515px;
     left: 25px; }
-  .e-element-two-abs {
-    bottom: 935px;
+  .e-element-abs-mobile {
+    top: 150px;
     right: 20px; }
+  .title-endorsement {
+    margin: 0 auto 30px;
+    width: 250px; }
   .title-help {
-    font-size: 30px;
-    line-height: 25px; }
+    font-size: 24px;
+    line-height: 24px; }
   .title-help span {
     font-size: 18px;
-    line-height: 22px; }
+    line-height: 20px; }
+  .help-text {
+    font-size: 16px; }
   .help-info {
     font-size: 15px; }
   .help-content {
@@ -13132,8 +13165,8 @@ button:focus {
     font-size: 14px;
     line-height: 17px; }
   .header {
-    background-position-y: -38px;
-    background-size: 476px auto; }
+    background-position-y: -62px;
+    background-size: 475px auto; }
   .header-six {
     margin: 0 auto 365px !important; }
   .mobile-content {
@@ -13153,8 +13186,8 @@ button:focus {
 
 @media (max-width: 425px) {
   .header {
-    background-position-y: -23px;
-    background-size: 425px auto; }
+    background-position-y: -50px;
+    background-size: 426px auto; }
   .mobile-content {
     background-size: 425px auto; }
   .header-six {
@@ -13170,12 +13203,16 @@ button:focus {
   .calc-offer__title {
     font-size: 12px;
     line-height: 16px; }
+  .reg-element-img-mob {
+    top: 227px; }
   .registration {
     padding: 30px 0 45px; }
   .registrations-contents__title::before {
-    background-size: 22px;
-    width: 22px;
-    height: 22px; }
+    top: -2px;
+    left: -16px;
+    background-size: 29px;
+    width: 30px;
+    height: 30px; }
   .registrations-contents__title {
     font-size: 15px;
     line-height: 19px; }
@@ -13201,7 +13238,7 @@ button:focus {
   .r-man-mob {
     width: auto;
     right: -78px;
-    bottom: 135px; }
+    bottom: 125px; }
   .btn-registration {
     max-width: 285px; }
   .reg-element-two {
@@ -13214,9 +13251,12 @@ button:focus {
     margin: 0 40px 20px 0 !important; }
   .endorsement-content__card:last-child {
     margin: 0 0 0 40px !important; }
-  .e-element-two-abs {
-    right: -19px;
-    bottom: 1030px; }
+  .e-element-abs-mobile {
+    top: 150px;
+    right: -29px; }
+  .e-element-one-abs {
+    top: 510px;
+    left: 10px; }
   .help-form input {
     max-width: 275px;
     padding: 18px 0;
@@ -13226,7 +13266,7 @@ button:focus {
   .h-bag-money {
     right: -85px; }
   .help-info {
-    font-size: 12px; }
+    font-size: 10px; }
   .quiz-substrate-seven {
     width: 300px !important; }
   .quiz-substrate {
@@ -13252,8 +13292,8 @@ button:focus {
 
 @media (max-width: 375px) {
   .header {
-    background-position-y: -1px;
-    background-size: 375px auto; }
+    background-position-y: -27px;
+    background-size: 376px auto; }
   .mobile-content {
     padding: 40px 0 95px;
     background-position-y: 22px;
@@ -13269,16 +13309,26 @@ button:focus {
     right: 85px !important; }
   .calc__row {
     width: 275px; }
+  .r-man-mob {
+    width: auto;
+    right: -81px;
+    bottom: 125px; }
+  .registration-content-elements:first-child .registration-contents-element__item:nth-child(3)::after {
+    width: 220px; }
+  .registration-content-elements:last-child .registration-contents-element__item:first-child::after {
+    width: 189px; }
+  .registration-content-elements:last-child .registration-contents-element__item:nth-child(2)::after {
+    width: 195px; }
   .h-bag-money {
     right: -57px; } }
 
 @media (max-width: 340px) {
   .mobile-content {
-    background-size: 340px auto;
-    background-position-y: 16px; }
+    background-size: 350px auto;
+    background-position-y: 15px; }
   .header {
-    background-position-y: -1px;
-    background-size: 360px auto; }
+    background-position-y: -15px;
+    background-size: 350px auto; }
   .header-six {
     margin: 0 auto 248px !important; }
   .help-content {

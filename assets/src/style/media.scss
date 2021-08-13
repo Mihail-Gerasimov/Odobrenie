@@ -56,6 +56,8 @@
     }
     .header-six::before {
         left: 0px;
+        top: 7px;
+        width: 470px;
     }
     // header
 
@@ -924,8 +926,8 @@
         line-height: 120%;
     }
     .header-six::before {
-        width: 350px;
-        top: 4px;
+        width: 370px;
+        top: 2px;
     }
     .btn-header {
         max-width: 320px;
@@ -1389,6 +1391,16 @@
         top: 307px;
         right: 15px;
     }
+    .registration-content {
+        padding-left: 17px !important;
+    }
+    .registrations-contents__title::before {
+        top: -2px;
+        left: -17px;
+        background-size: 35px;
+        width: 35px;
+        height: 35px;
+    }
     // registration
 
     // endorsement
@@ -1601,16 +1613,16 @@
     .header {
         background-image: url(../img/3-header/h-fon-mob.png);
         background-repeat: no-repeat;
-        background-position-y: -150px;
+        background-position-y: -125px;
         background-position-x: -1px;
-        background-size: 609px auto;
+        background-size: 576px;
     }
     .header-text {
         display: none;
     }
     .title-header {
-        width: 215px;
-        margin: 0 auto;
+        width: 225px;
+        margin: 0 auto 15px !important;
         font-size: 30px;
         line-height: 37px;
         text-align: center;
@@ -1622,15 +1634,15 @@
         font-size: 20px;
         line-height: 25px;
         width: fit-content;
-        margin: 0 auto 410px !important;
+        margin: 0 auto 422px !important;
     }
     .header-six span {
         font-size: 22px;
         line-height: 27px;
     }
     .header-six::before {
-        width: 205px;
-        top: 0px;
+        width: 225px;
+        top: -2px;
         height: 38px;
         left: -22px;
     }
@@ -1785,9 +1797,17 @@
     // calc
 
     // registration
+    .reg-element-two {
+        display: none;
+    }
+    .reg-element-img-mob {
+        width: 70px;
+        top: 295px;
+        right: 15px;
+    }
     .r-man-mob {
         right: -115px;
-        bottom: 210px;
+        bottom: 140px;
     }
     .registration-content-elements:first-child .registration-contents-element__item:nth-child(3)::after {
         width: 280px;
@@ -1805,9 +1825,27 @@
         max-width: 275px;
         margin: 0px 0 0 !important;
     }
+    .registration-list__item {
+        font-family: "Gilroy-Regular";
+        font-weight: normal;
+    }
     // registration
 
     // endorsement
+    .title-some span {
+        letter-spacing: 1px;
+    }
+    .some-block {
+        margin-bottom: 30px;
+    }
+    .endorsement-content-card__text {
+        font-family: "Gilroy-Regular";
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .endorsement-content {
+        margin-bottom: 70px;
+    }
     .endorsement-content__card:first-child {
         margin: 0 100px 20px 0 !important;
     }
@@ -1833,23 +1871,30 @@
         top: 6px;
     }
     .e-element-one-abs {
-        top: 533px;
+        top: 515px;
         left: 25px;
     }
-    .e-element-two-abs {
-        bottom: 935px;
+    .e-element-abs-mobile {
+        top: 150px;
         right: 20px;
+    }
+    .title-endorsement {
+        margin: 0 auto 30px;
+        width: 250px;
     }
     // endorsement
 
     // help
     .title-help {
-        font-size: 30px;
-        line-height: 25px;
+        font-size: 24px;
+        line-height: 24px;
     }
     .title-help span {
         font-size: 18px;
-        line-height: 22px;
+        line-height: 20px;
+    }
+    .help-text {
+        font-size: 16px;
     }
     .help-info {
         font-size: 15px;
@@ -2041,8 +2086,8 @@
 
     // header
     .header {
-        background-position-y: -38px;
-        background-size: 476px auto;
+        background-position-y: -62px;
+        background-size: 475px auto;
     }
     .header-six {
         margin: 0 auto 365px !important;
@@ -2105,8 +2150,8 @@
 @media (max-width: 425px) {
     // header
     .header {
-        background-position-y: -23px;
-        background-size: 425px auto;
+        background-position-y: -50px;
+        background-size: 426px auto;
     }
     .mobile-content {
         background-size: 425px auto;
@@ -2134,13 +2179,18 @@
     }
     // calc
     // registration
+    .reg-element-img-mob {
+        top: 227px;
+    }
     .registration {
         padding: 30px 0 45px;
     }
     .registrations-contents__title::before {
-        background-size: 22px;
-        width: 22px;
-        height: 22px;
+        top: -2px;
+        left: -16px;
+        background-size: 29px;
+        width: 30px;
+        height: 30px;
     }
     .registrations-contents__title {
         font-size: 15px;
@@ -2176,7 +2226,7 @@
     .r-man-mob {
         width: auto;
         right: -78px;
-        bottom: 135px;
+        bottom: 125px;
     }
     .btn-registration {
         max-width: 285px;
@@ -2199,9 +2249,13 @@
     .endorsement-content__card:last-child {
         margin: 0 0 0 40px !important;
     }
-    .e-element-two-abs {
-        right: -19px;
-        bottom: 1030px;
+    .e-element-abs-mobile {
+        top: 150px;
+        right: -29px;
+    }
+    .e-element-one-abs {
+        top: 510px;
+        left: 10px;
     }
     // endorsement
     // help
@@ -2217,7 +2271,7 @@
         right: -85px;
     }
     .help-info {
-        font-size: 12px;
+        font-size: 10px;
     }
     // help
     // quiz
@@ -2256,8 +2310,8 @@
 }
 @media (max-width: 375px) {
     .header {
-        background-position-y: -1px;
-        background-size: 375px auto;
+        background-position-y: -27px;
+        background-size: 376px auto;
     }
     .mobile-content {
         padding: 40px 0 95px;
@@ -2282,6 +2336,22 @@
         width: 275px;
     }
     // calc
+    // registration
+    .r-man-mob {
+        width: auto;
+        right: -81px;
+        bottom: 125px;
+    }
+    .registration-content-elements:first-child .registration-contents-element__item:nth-child(3)::after {
+        width: 220px;
+    }
+    .registration-content-elements:last-child .registration-contents-element__item:first-child::after {
+        width: 189px;
+    }
+    .registration-content-elements:last-child .registration-contents-element__item:nth-child(2)::after {
+        width: 195px;
+    }
+    // registration
     // help
     .h-bag-money {
         right: -57px;
@@ -2290,12 +2360,12 @@
 }
 @media (max-width: 340px) {
     .mobile-content {
-        background-size: 340px auto;
-        background-position-y: 16px;
+        background-size: 350px auto;
+        background-position-y: 15px;
     }
     .header {
-        background-position-y: -1px;
-        background-size: 360px auto;
+        background-position-y: -15px;
+        background-size: 350px auto;
     }
     .header-six {
         margin: 0 auto 248px !important;
